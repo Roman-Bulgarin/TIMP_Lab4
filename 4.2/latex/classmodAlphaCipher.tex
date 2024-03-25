@@ -1,0 +1,75 @@
+\hypertarget{classmodAlphaCipher}{}\doxysection{Класс mod\+Alpha\+Cipher}
+\label{classmodAlphaCipher}\index{modAlphaCipher@{modAlphaCipher}}
+
+
+Класс для шифрования и расшифрования текста с помощью алгоритма модифицированного алфавитного шифра  
+
+
+
+
+{\ttfamily \#include $<$Table\+Cipher.\+h$>$}
+
+\doxysubsection*{Открытые члены}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classmodAlphaCipher_a9356622063f30c2661adcde5992a314b}\label{classmodAlphaCipher_a9356622063f30c2661adcde5992a314b}} 
+{\bfseries mod\+Alpha\+Cipher} (const int \&key)
+\item 
+string \mbox{\hyperlink{classmodAlphaCipher_a8d869faafb0dffc2a5a7002760e72f40}{encrypt}} (const string \&open\+\_\+st)
+\begin{DoxyCompactList}\small\item\em Метод для расшифрования \end{DoxyCompactList}\item 
+string \mbox{\hyperlink{classmodAlphaCipher_a332737e00121b42373dad9dd0081189f}{decrypt}} (const string \&cipher\+\_\+st)
+\begin{DoxyCompactList}\small\item\em Метод для зашифрования \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Подробное описание}
+Класс для шифрования и расшифрования текста с помощью алгоритма модифицированного алфавитного шифра 
+
+Данный класс предоставляет методы для шифрования и расшифрования текста с помощью алгоритма модифицированного алфавитного шифра.
+
+Класс имеет встроенный алфавит, состоящий из заглавных букв русского алфавита.
+
+Ключ шифрования задается при создании объекта класса. 
+
+\doxysubsection{Методы}
+\mbox{\Hypertarget{classmodAlphaCipher_a332737e00121b42373dad9dd0081189f}\label{classmodAlphaCipher_a332737e00121b42373dad9dd0081189f}} 
+\index{modAlphaCipher@{modAlphaCipher}!decrypt@{decrypt}}
+\index{decrypt@{decrypt}!modAlphaCipher@{modAlphaCipher}}
+\doxysubsubsection{\texorpdfstring{decrypt()}{decrypt()}}
+{\footnotesize\ttfamily string mod\+Alpha\+Cipher\+::decrypt (\begin{DoxyParamCaption}\item[{const string \&}]{cipher\+\_\+st }\end{DoxyParamCaption})}
+
+
+
+Метод для зашифрования 
+
+Метод для расшифрования текста 
+\begin{DoxyParams}{Аргументы}
+{\em cipher\+\_\+text} & -\/ зашифрованный текст \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Возвращает}
+Расшифрованный текст 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classmodAlphaCipher_a8d869faafb0dffc2a5a7002760e72f40}\label{classmodAlphaCipher_a8d869faafb0dffc2a5a7002760e72f40}} 
+\index{modAlphaCipher@{modAlphaCipher}!encrypt@{encrypt}}
+\index{encrypt@{encrypt}!modAlphaCipher@{modAlphaCipher}}
+\doxysubsubsection{\texorpdfstring{encrypt()}{encrypt()}}
+{\footnotesize\ttfamily string mod\+Alpha\+Cipher\+::encrypt (\begin{DoxyParamCaption}\item[{const string \&}]{open\+\_\+st }\end{DoxyParamCaption})}
+
+
+
+Метод для расшифрования 
+
+Метод для шифрования текста 
+\begin{DoxyParams}{Аргументы}
+{\em open\+\_\+text} & -\/ открытый текст \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Возвращает}
+Зашифрованный текст 
+\end{DoxyReturn}
+
+
+Объявления и описания членов классов находятся в файлах\+:\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{TableCipher_8h}{Table\+Cipher.\+h}}\item 
+Table\+Cipher.\+cpp\end{DoxyCompactItemize}
