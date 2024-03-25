@@ -1,0 +1,64 @@
+\hypertarget{classmodAlphaCipher}{}\doxysection{Класс mod\+Alpha\+Cipher}
+\label{classmodAlphaCipher}\index{modAlphaCipher@{modAlphaCipher}}
+
+
+Класс, который реализует шифрование методом \char`\"{}Гронсвельда\char`\"{}.  
+
+
+
+
+{\ttfamily \#include $<$mod\+Alpha\+Cipher.\+h$>$}
+
+\doxysubsection*{Открытые члены}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classmodAlphaCipher_a4f0a86c20f5d836f66cb1e640d875e6b}\label{classmodAlphaCipher_a4f0a86c20f5d836f66cb1e640d875e6b}} 
+\mbox{\hyperlink{classmodAlphaCipher_a4f0a86c20f5d836f66cb1e640d875e6b}{mod\+Alpha\+Cipher}} ()=delete
+\begin{DoxyCompactList}\small\item\em Конструктор без параметров \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classmodAlphaCipher_a5e2b42f76c91038870412d0b14d31544}{mod\+Alpha\+Cipher}} (const wstring \&skey)
+\begin{DoxyCompactList}\small\item\em Конструктор для ключа \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classmodAlphaCipher_ad540be3199da225a63a9589ca62347ce}\label{classmodAlphaCipher_ad540be3199da225a63a9589ca62347ce}} 
+wstring \mbox{\hyperlink{classmodAlphaCipher_ad540be3199da225a63a9589ca62347ce}{encrypt}} (const wstring \&open\+\_\+text)
+\begin{DoxyCompactList}\small\item\em Метод для зашифрования \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classmodAlphaCipher_ae7880f197cbe27f8659455cc4c9020fb}\label{classmodAlphaCipher_ae7880f197cbe27f8659455cc4c9020fb}} 
+wstring \mbox{\hyperlink{classmodAlphaCipher_ae7880f197cbe27f8659455cc4c9020fb}{decrypt}} (const wstring \&cipher\+\_\+text)
+\begin{DoxyCompactList}\small\item\em Метод для расшифрования \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Подробное описание}
+Класс, который реализует шифрование методом \char`\"{}Гронсвельда\char`\"{}. 
+
+\begin{DoxyWarning}{Предупреждения}
+Работает только с русскоязычными сообщениями 
+\end{DoxyWarning}
+
+
+\doxysubsection{Конструктор(ы)}
+\mbox{\Hypertarget{classmodAlphaCipher_a5e2b42f76c91038870412d0b14d31544}\label{classmodAlphaCipher_a5e2b42f76c91038870412d0b14d31544}} 
+\index{modAlphaCipher@{modAlphaCipher}!modAlphaCipher@{modAlphaCipher}}
+\index{modAlphaCipher@{modAlphaCipher}!modAlphaCipher@{modAlphaCipher}}
+\doxysubsubsection{\texorpdfstring{modAlphaCipher()}{modAlphaCipher()}}
+{\footnotesize\ttfamily mod\+Alpha\+Cipher\+::mod\+Alpha\+Cipher (\begin{DoxyParamCaption}\item[{const wstring \&}]{skey }\end{DoxyParamCaption})}
+
+
+
+Конструктор для ключа 
+
+Цикл for построен по строке-\/алфавиту и на каждом шаге добавляет в ассоциативный массив символ и его номер. 
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\textcolor{keywordflow}{for} (\textcolor{keywordtype}{unsigned} i=0; i<numAlpha.size(); i++) \{}
+\DoxyCodeLine{     alphaNum[numAlpha[i]]=i;}
+\DoxyCodeLine{ \}}
+
+\end{DoxyCode}
+ 
+\begin{DoxyParams}{Аргументы}
+{\em std\+::wstring} & -\/ ключ в виде строки \\
+\hline
+\end{DoxyParams}
+
+
+Объявления и описания членов классов находятся в файлах\+:\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{modAlphaCipher_8h}{mod\+Alpha\+Cipher.\+h}}\item 
+mod\+Alpha\+Cipher.\+cpp\end{DoxyCompactItemize}
